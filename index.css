@@ -420,6 +420,9 @@ a{
 }
 
 @media(max-width:640px){
+    .hero{
+        padding: 60px;
+    }
     .hero-img{
         width: 300px;
     }
@@ -441,6 +444,26 @@ a{
 }
 
 @media(max-width:400px){
+    .nav{
+        padding: 20px;
+    }
+    .hero{
+        padding: 40px;
+        gap: 40px;
+    }
+    .main-txt{
+        gap: 0px;
+    }
+    .head-sm{
+        font-size: 14px;
+    }
+    .head-h1{
+        font-size: 34px;
+    }
+    .head-txt{
+        font-size: 12px;
+        line-height: 1.2rem;
+    }
     .hero-img{
         width: 300px;
     }
