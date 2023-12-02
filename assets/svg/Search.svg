@@ -1,0 +1,18 @@
+<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Iconly/Bulk/Search">
+<g id="Search">
+<ellipse id="Ellipse_746" cx="17.6641" cy="17.7561" rx="14.332" ry="14.4221" fill="url(#paint0_linear_102_401)"/>
+<path id="Path_34202" opacity="0.4" d="M34.4595 36.5925C33.9028 36.5745 33.3734 36.3454 32.9774 35.9512L29.5833 31.984C28.8557 31.3186 28.7962 30.1877 29.45 29.4486C29.756 29.139 30.172 28.9648 30.606 28.9648C31.04 28.9648 31.456 29.139 31.7621 29.4486L36.0305 32.864C36.6454 33.4933 36.8351 34.4275 36.5149 35.2491C36.1948 36.0707 35.4245 36.6261 34.5484 36.6671L34.4595 36.5925Z" fill="url(#paint1_linear_102_401)"/>
+</g>
+</g>
+<defs>
+<linearGradient id="paint0_linear_102_401" x1="22.7346" y1="14.7515" x2="29.0934" y2="14.7627" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0085FE"/>
+<stop offset="1" stop-color="#00B68D"/>
+</linearGradient>
+<linearGradient id="paint1_linear_102_401" x1="34.1895" y1="32.0137" x2="35.8915" y2="32.0167" gradientUnits="userSpaceOnUse">
+<stop stop-color="#0085FE"/>
+<stop offset="1" stop-color="#00B68D"/>
+</linearGradient>
+</defs>
+</svg>
