@@ -342,7 +342,7 @@ body{
 }
 
 .card-h:hover{
-    transform: scale(1.02);
+    scale: 1.02;
     transition: all .4s ease-in-out;
 }
 
@@ -441,6 +441,10 @@ a{
     }
     .left-grid img{
         width: 300px;
+    }
+    .card-sm{
+        padding: 0;
+        margin-bottom: 20px;
     }
     .nav{
         padding: 20px;
