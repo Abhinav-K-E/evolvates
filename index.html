@@ -6,10 +6,12 @@
     <title>Evolvates</title>
 
     <!--connecting-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+    />
 
     <link rel="stylesheet" href="./index.css" />
-
   </head>
   <body>
     <div class="wrapper">
@@ -21,27 +23,39 @@
           </figure>
           <div class="logo-name">Evolvates</div>
         </div>
-        <div class="nav-grp">
+
+        <div class="nav-grp" id="list">
           <ul class="navlinks">
-            <a href="" class="link">
+            <a href="#hero" class="link" >
               <li>Home</li>
             </a>
-            <a href="" class="link">
+            <a href="#about" class="link">
               <li>About</li>
             </a>
-            <a href="" class="link">
+            <!-- <a href="" class="link">
               <li>Events</li>
-            </a>
-            <a href="" class="link">
+            </a> -->
+            <a href="#contact" class="link">
               <li>Contact</li>
             </a>
           </ul>
           <div class="nav-btn">Join Us</div>
         </div>
+
+        <label class="hamburger dis" id="menu">
+          <input type="checkbox" />
+          <svg viewBox="0 0 32 32">
+            <path
+              class="line line-top-bottom"
+              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22"
+            ></path>
+            <path class="line" d="M7 16 27 16"></path>
+          </svg>
+        </label>
       </nav>
       <!--Hero section-->
       <section class="hero">
-        <div class="main-txt">
+        <div class="main-txt" id="hero">
           <div class="head-txt">
             Connect with the Like Minded : Where Shared Interests Unite !
           </div>
@@ -63,7 +77,7 @@
       </section>
       <!--featured section-->
       <section class="sec-1">
-        <div  class="sec-head">Features</div>
+        <div class="sec-head">Features</div>
         <div class="cards">
           <div class="card" data-aos="fade-up" data-aos-duration="800">
             <div class="card-icon">
@@ -121,7 +135,7 @@
             <div class="card-txt">
               Immerse yourself in an environment that prioritizes
               information-sharing and the development of essential leadership
-              qualities. 
+              qualities.
             </div>
           </div>
           <div class="card" data-aos="fade-up" data-aos-duration="800">
@@ -253,7 +267,7 @@
         </div>
       </section>
       <!--About section-->
-      <section class="sec-3">
+      <section class="sec-3" id="about">
         <div class="sec-head">About Us</div>
         <div class="grid-layout">
           <div class="left-grid" data-aos="fade-up" data-aos-duration="800">
@@ -288,11 +302,16 @@
           </div>
         </div>
       </section>
-      <section class="sec-4">
+      <section class="sec-4" id="contact">
         <div class="sec-head">Get in Touch</div>
         <div class="grid-layout">
           <div class="left-box" data-aos="fade-up" data-aos-duration="800">
-            <a href="mailto:abhinavke091@gmail.com" class="card-h" data-aos="fade-up" data-aos-duration="800">
+            <a
+              href="mailto:abhinavke091@gmail.com"
+              class="card-h"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <svg
                 width="24"
                 height="24"
@@ -311,7 +330,12 @@
               </svg>
               <div class="icon-txt">evolvates@gmail.com</div>
             </a>
-            <a href="tel:9895467969" class="card-h" data-aos="fade-up" data-aos-duration="800">
+            <a
+              href="tel:9895467969"
+              class="card-h"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <svg
                 width="24"
                 height="24"
@@ -326,7 +350,12 @@
               </svg>
               <div class="icon-txt">+91 98954679XX</div>
             </a>
-            <a href="tel:9895467969" class="card-h discord" data-aos-duration="800" data-aos="fade-up">
+            <a
+              href="tel:9895467969"
+              class="card-h discord"
+              data-aos-duration="800"
+              data-aos="fade-up"
+            >
               <div class="icon-txt">Join Discord</div>
             </a>
           </div>
@@ -411,7 +440,32 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script>
-        AOS.init();
+      document.addEventListener('DOMContentLoaded', function () {
+        const checkbox = document.querySelector('.hamburger input');
+        const navGroup = document.querySelector('.nav-grp');
+        const wrap = document.querySelector(".wrapper");
+        function show() {
+          if (this.checked) {
+            navGroup.classList.add('show');
+          } else {
+            navGroup.classList.remove('show');
+          }
+        }
+        checkbox.addEventListener('change', show);
+        wrap.addEventListener('click',function (){
+          if(checkbox.checked === true)
+          {
+            checkbox.checked = false;
+            show();
+            console.log(checkbox)
+          }
+          else{
+            checkbox.checked = true;
+          }
+
+        })
+      });
+      AOS.init();
     </script>
   </body>
 </html>
