@@ -219,6 +219,8 @@ body {
     height: 100%;
     font-size: 34px;
     font-weight: 700;
+    text-align: center;
+    line-height: 2.6rem;
 }
 
 .quote-grad {
@@ -490,15 +492,17 @@ a {
         top: 0px;
         z-index: 20;
         background: #ffffff67;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
         height: 100%;
         transform: translateX(200%);
         transition: all .4s ease-in-out;
+        font-size: 18px;
     }
 
     .navlinks {
         display: flex;
         flex-direction: column;
+        font-size: 18px;
     }
 
     .navlinks li {
@@ -567,11 +571,17 @@ a {
     }
 
     .head-sm {
-        font-size: 14px;
+        font-size: 12px;
     }
 
     .head-h1 {
-        font-size: 32px;
+        font-size: 26px;
+    }
+    .sec-2{
+        padding: 40px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     .head-txt {
@@ -584,7 +594,7 @@ a {
     }
 
     .sec-head {
-        font-size: 32px;
+        font-size: 28px;
     }
 
     .right-box img {
@@ -601,6 +611,7 @@ a {
 
     .quote {
         font-size: 20px;
+        line-height: 1.5;
     }
 
     .card-txt {
