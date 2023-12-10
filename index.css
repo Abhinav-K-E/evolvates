@@ -606,11 +606,11 @@ a {
     }
 
     .left-grid img {
-        width: 300px;
+        width: 100%;
     }
 
     .quote {
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.5;
     }
 
@@ -629,8 +629,32 @@ a {
     .fig {
         width: 64px;
     }
+    .sec-4{
+        margin-top: -40px;
+        width: 100%;
+    }
+    .right-box{
+        max-width: 100%;
+    }
+    .left-box{
+        max-width: 100%;
+        justify-content: flex-start;
+    }
+    .card-h{
+        width: 100%;
+        font-size: 14px;
+    }
+    .right-box img{
+        width: 200px;
+    }
+    .foot{
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.5rem;
+    }
 
 }
+
 
 .show {
     transform: translateX(0);
