@@ -13,6 +13,8 @@
 
     --blue: #008DE9;
 
+    --light-blue : #6CD1FF;
+
     --lightGray: #F2F2F2;
 
     --darkBlue: #000B28;
@@ -115,6 +117,23 @@ body {
     padding: 50px 100px;
     gap: 40px;
     text-align: center;
+}
+
+.main-svg{
+    width: 100%;
+    max-width: 800px;
+}
+
+.main-hero-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 30px;
+    background-color: var(--light-blue);
+    border-radius: 10px;
+    font-weight: 500;
+    cursor: pointer;
+    font-size: 18px;
 }
 
 .main-txt {
@@ -481,6 +500,10 @@ a {
         padding-top: 60px;
     }
 
+    .main-hero-btn{
+        font-size: 16px;
+    }
+
 
     .nav-grp {
         display: flex;
@@ -559,6 +582,10 @@ a {
 @media(max-width:400px) {
     .nav {
         padding: 10px;
+    }
+    .main-hero-btn{
+        font-size: 14px;
+        padding: 10px 20px;
     }
 
     .hero {
