@@ -83,7 +83,6 @@ body {
 
 .nav-grp a {
     text-decoration: none;
-    color: var(--dark);
 }
 
 .navlinks {
@@ -96,6 +95,10 @@ body {
     font-weight: 500;
 }
 
+.navlinks a{
+    color: var(--dark);
+}
+
 .nav-btn {
     padding: 10px 20px;
     display: flex;
@@ -103,8 +106,12 @@ body {
     justify-content: center;
     background-color: var(--blue);
     border-radius: 40px;
-    color: #fff;
     font-weight: 500;
+    color: #fff;
+}
+
+.nav-btn a{
+    color: #fff;
 }
 
 /*==== hero section ====*/
@@ -133,6 +140,13 @@ body {
     font-weight: 500;
     cursor: pointer;
     font-size: 18px;
+    color: var(--darkBlue);
+    transition: all .4s ease-in-out;
+}
+
+.main-hero-btn:hover{
+    scale: 1.02;
+    transition: all .4s ease-in-out;
 }
 
 .main-txt {
