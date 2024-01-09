@@ -266,6 +266,88 @@ body {
 }
 
 /*=== about section ===*/
+/*========= about =======*/
+.about-sec{
+    width: 100%;
+    padding: 40px;
+    padding-top: 60px;
+}
+
+.head{
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--main-txt);
+    margin-bottom: 60px;
+}
+
+.grid-lay{
+    width: 100%;
+    min-height: 500px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 40px;
+}
+
+.grid01{
+    width: 100%;
+    height: 100%;
+    /* background-color: #6c256d0d; */
+    border-radius: 10px;
+    background: url(./assets/images/about.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.grid02{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.grid-cards{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.card-vr{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card-i{
+    width: 60px;
+    height: 60px;
+    background-color: #0083fe13;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-i svg{
+    width: 26px;
+    height: 26px;
+    fill: #0085FE;
+}
+
+#target{
+    width: 40px;
+    height: 35px;
+}
+.card-txt{
+    text-align: justify;
+    color: #000000bb;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
 .sec-3 {
     width: 100%;
     text-align: center;
@@ -593,6 +675,25 @@ a {
 
     .dis {
         display: block;
+    }
+
+    .grid-lay{
+        grid-template-columns: 1fr;
+        padding: 0;
+    }
+    .grid01 img{
+        display: none;
+    }
+    .grid01{
+        width: 100%;
+        height: 420px;
+        background: url(./assets/images/about.jpg);
+        background-size: 400px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .about-sec{
+        padding: 20px;
     }
 }
 
