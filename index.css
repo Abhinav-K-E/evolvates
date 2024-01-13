@@ -214,8 +214,8 @@ body {
 }
 
 .card {
-    width: 326px;
-    height: 370px;
+    width: 320px;
+    height: 350px;
     background-color: var(--lightGray);
     border-radius: 10px;
     padding: 30px;
