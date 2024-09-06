@@ -407,6 +407,65 @@ body {
     font-weight: 500;
 }
 
+/*==== Communities ====*/
+
+.communities {
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+    align-items: center;
+}
+
+.communities-cards {
+    width: 100%;
+    gap: 40px;
+    display: flex;
+    flex-direction: column;
+    max-width: 80vw;
+}
+
+.communities-card {
+    width: 100%;
+    height: auto;
+    background-color: var(--lightGray);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    text-align: left;
+    line-height: 1.5rem;
+    font-weight: 400;
+}
+
+.communities-card-logo {
+    width: 88px;
+    height: 88px;
+    aspect-ratio: 1;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px #c0bbbb5e;
+}
+
+.communities-card-txt-heading {
+    text-align: left;
+    color: #000000bb;
+    font-size: 32px;
+    line-height: 1.6;
+    font-weight: 600;
+}
+
+.communities-card-txt {
+    text-align: left;
+    color: #000000bb;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+
+
 /*==== get in touch / contact ====*/
 .sec-4 {
     width: 100%;
@@ -714,6 +773,12 @@ a {
     }
     .about-sec{
         padding: 20px;
+    }
+}
+
+@media(max-width:480px) {
+    .communities-card {
+        flex-direction: column;
     }
 }
 
